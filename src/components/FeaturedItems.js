@@ -126,7 +126,7 @@ const FeaturedItems = () => {
                       <i className="fa-solid fa-star" />
                       <i className="fa-solid fa-star" />
                       <i className="fa-solid fa-star" />
-                      <div className="tag">(4.5)</div>
+                      <spans className="tag">(4.5)</spans>
                     </div>
                     <div className="list">
                       <ul>
