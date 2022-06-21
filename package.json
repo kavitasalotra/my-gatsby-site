@@ -1,0 +1,39 @@
+{
+  "name": "my-gatsby-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "my-gatsby-site",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "start": "npm run develop",
+    "develop": "gatsby develop",
+    "serve": "gatsby serve",
+    "build": "gatsby build",
+    "lint": "eslint --ignore-path .gitignore \"src/**/*.{js,jsx}\"",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^2.0.7",
+    "bulma": "^0.9.4",
+    "gatsby": "^4.15.1",
+    "gatsby-plugin-styled-components": "^5.15.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "babel-eslint": "10.1.0",
+    "babel-plugin-styled-components": "^1.11.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.5",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1"
+  }
+}
