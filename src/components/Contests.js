@@ -23,6 +23,8 @@ const Contests = () => {
               subtitle="Number Of Artists"
               title1="410 Pictures"
               subtitle1="Submitted pics"
+              winner="Anthony Soft"
+              awards="4,220"
             />
           </div>
           <div className="column is-4">
@@ -32,6 +34,8 @@ const Contests = () => {
               subtitle="Number Of Artists"
               title1="320 Pictures"
               subtitle1="Submitted pics"
+              winner="Anthony Soft"
+              awards="1,220"
             />
           </div>
           <div className="column is-4">
@@ -41,6 +45,8 @@ const Contests = () => {
               subtitle="Number Of Artists"
               title1="284 Pictures"
               subtitle1="Submitted pics"
+              winner="Anthony Soft"
+              awards="3,220"
             />
           </div>
         </div>

@@ -29,6 +29,8 @@ const Categories = () => {
             subtitle="Available Contests"
             cardimage="/images/popular-01.png"
             button="Browse Nature Pic Contests"
+            category="Top Contest"
+            likes="256"
           />
         </div>
         <div className="column is-3">
@@ -39,6 +41,8 @@ const Categories = () => {
             subtitle="Available Contests"
             cardimage="/images/popular-02.png"
             button="Browse Random Pic Contests"
+            category="Top Contest"
+            likes="256"
           />
         </div>
         <div className="column is-3">
@@ -49,6 +53,8 @@ const Categories = () => {
             subtitle="Available Contests"
             cardimage="/images/popular-03.png"
             button="Browse Portrait Pic Contests"
+            category="Top Contest"
+            likes="256"
           />
         </div>
         <div className="column is-3">
@@ -58,7 +64,9 @@ const Categories = () => {
             number="135"
             subtitle="Available Contests"
             cardimage="/images/popular-04.png"
-            button="Browse Space  Pic Contests"
+            button="Browse Space Pic Contests"
+            category="Top Contest"
+            likes="256"
           />
         </div>
       </div>

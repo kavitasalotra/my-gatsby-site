@@ -49,7 +49,10 @@ const Header = () => {
                 </div>
               </div>
 
-              <a href="/" className="navbar-item has-text-white text-base">
+              <a
+                href="/categories"
+                className="navbar-item has-text-white text-base"
+              >
                 CATEGORIES
               </a>
               <a href="/" className="navbar-item has-text-white text-base">

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
+import FeatureItem from './FeatureItem';
 
 const Wrapper = styled.div`
   .column.is-1 {
@@ -13,50 +14,53 @@ const Wrapper = styled.div`
       align-items: center;
     }
   }
-  .overlay {
-    background-color: rgba(250, 250, 250, 0.92);
-    left: 0;
-    top: 100%;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    position: absolute;
-    opacity: 0;
-    transition: all 0.3s;
-  }
-  .images:hover .overlay {
-    height: 100%;
-  }
-  .info {
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0px 15px;
-  }
 `;
 
 const data = [
   {
     id: 1,
     image: '/images/featured-01.jpg',
+    title: 'Walk In The Nature',
+    rating: 4.5,
+    winnerName: 'Vincent Adam',
+    contestAuthorName: 'Anthony Soft',
+    awards: '1.000 + Camera Nikon',
   },
   {
     id: 2,
     image: '/images/featured-02.jpg',
+    title: 'Run In The Nature',
+    rating: 4.5,
+    winnerName: 'Thomas Eddy ',
+    contestAuthorName: 'Anthony Soft',
+    awards: ' 4,400 + Canon EOS R5',
   },
   {
     id: 3,
     image: '/images/featured-03.jpg',
+    title: 'Fly In The Nature',
+    rating: 4.5,
+    winnerName: 'Vincent Adam',
+    contestAuthorName: 'Anthony Soft',
+    awards: '5,500 + Canon EOS R3',
   },
   {
     id: 4,
     image: '/images/featured-02.jpg',
+    title: 'Stay In The Nature',
+    rating: 4.5,
+    winnerName: 'Vincent Adam',
+    contestAuthorName: 'Anthony Soft',
+    awards: '5,500 + Canon EOS R3',
   },
   {
     id: 5,
     image: '/images/featured-03.jpg',
+    title: 'Shoot In The Nature',
+    rating: 4.5,
+    winnerName: 'Vincent Adam',
+    contestAuthorName: 'Anthony Soft',
+    awards: '5,500 + Canon EOS R3',
   },
 ];
 
@@ -111,48 +115,7 @@ const FeaturedItems = () => {
         <div className="column is-10">
           <Slider {...settings} ref={sliderRef}>
             {data.map((item) => (
-              <div key={item.id} className="px-3">
-                <img
-                  src={item.image}
-                  className="border-color is-relative images"
-                  alt="featured"
-                />
-                <div className="content overlay">
-                  <div className="info">
-                    <div>
-                      <h1 className="text-base has-text-blue">
-                        Walk In Nature
-                      </h1>
-                      <i className="fa-solid fa-star" />
-                      <i className="fa-solid fa-star" />
-                      <i className="fa-solid fa-star" />
-                      <span className="tag">(4.5)</span>
-                    </div>
-                    <div className="list">
-                      <ul>
-                        <li>
-                          <span className="text-base has-text-weight-semibold">
-                            Contest Winner:
-                          </span>
-                          Vincent Adam
-                        </li>
-                        <li>
-                          <span className="text-base has-text-weight-semibold">
-                            Contest Author:
-                          </span>
-                          Anthony Soft
-                        </li>
-                        <li>
-                          <span className="text-base has-text-weight-semibold">
-                            Awards:
-                          </span>
-                          $8,400 + Canon EOS R1
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <FeatureItem key={item.id} item={item} />
             ))}
           </Slider>
         </div>

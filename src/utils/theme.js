@@ -97,7 +97,7 @@ const GlobalStyle = createGlobalStyle`
     border-radius: 10px;
   }
   .button-is-primary{
-    background-color:${theme.mainBrandColor};
+    background-color:${theme.mainBrandColor} !important;
     color:${theme.textColorLite}!important;
     border-radius:50%;
   }

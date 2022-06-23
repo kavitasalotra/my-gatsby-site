@@ -8,7 +8,6 @@ const categories = () => {
   return (
     <div>
       <Layout>
-        <Button />
         <HomeHero />
       </Layout>
     </div>
