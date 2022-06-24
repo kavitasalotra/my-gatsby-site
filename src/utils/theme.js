@@ -65,16 +65,14 @@ const GlobalStyle = createGlobalStyle`
   }
   .has-text-blue {
     color: ${theme.textColorBlue}!important;
-  }
+  }  letter-spacing: 1px;
   .has-background-white-bis  {
     background-color: ${theme.backgroundColor};
   }
   .has-background-blue{
-    background-color:${theme.backgroundColorBlue};
+    background-color:${theme.backgroundColorBlue} !important;
     }
-    .has-background-light{
-      background-color:${theme.backgroundColorLight}
-    }
+    .has-background-  letter-spacing: 1px;
   .text-base{
     font-size: ${theme.fontSizeBase};
   }
@@ -112,6 +110,12 @@ background-repeat: no-repeat;
 hr{
   width:70%;
 }
+.border-radius-small{
+  border-radius:13px;
+}
+.border-radius-medium{
+  border-radius:30px;
+}
 .border-color{
   border:1px solid ${theme.borderColor};
   border-radius:15px !important;
@@ -121,5 +125,6 @@ background-image: url('/images/closed-bg.jpg');
 background-size:cover;
 background-repeat: no-repeat;
 }
+
 `;
 export default GlobalStyle;

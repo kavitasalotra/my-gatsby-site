@@ -1,9 +1,19 @@
+import { Link } from 'gatsby';
 import * as React from 'react';
 import styled from 'styled-components';
+import { theme } from '../utils/theme';
 
 const Section = styled.div`
   .navbar-link:not(.is-arrowless)::after {
-    border-color: #fff;
+    border-color: ${theme.backgroundColorBlue} !important;
+  }
+  a.has-text-blue:hover {
+    background-color: ${theme.backgroundColorBlue} !important;
+    color: #fff !important;
+  }
+  .navbar-dropdown a.navbar-item:hover {
+    background-color:${theme.backgroundColorBlue} !important;
+    color:#000; !important;
   }
 `;
 
@@ -25,22 +35,28 @@ const Header = () => {
             href="/"
           >
             <span aria-hidden="true" />
-            <span aria-hidden="true" />r
+            <span aria-hidden="true" />
           </a>
         </div>
         <div id="navbarBasicExample" className="navbar-menu">
-          <div className="navbar-start ml-auto">
-            <div className="has-background-blue is-flex">
-              <a href="/" className="navbar-item has-text-white text-base ">
+          <div className="navbar-start ml-auto mr-0 is-justify-content-center">
+            <div className="is-flex">
+              <a
+                href="/"
+                className="navbar-item has-text-blue is-size-6 has-text-weight-semibold pr-4"
+              >
                 HOME
               </a>
               <div className="navbar-item has-dropdown is-hoverable">
-                <a href=" " className="navbar-link has-text-white text-base">
+                <a
+                  href=" "
+                  className=" has-text-blue navbar-link  is-size-6 has-text-weight-semibold "
+                >
                   PHOTOS & VIDEOS
                 </a>
 
                 <div className="navbar-dropdown">
-                  <a href=" " className="navbar-item text-base">
+                  <a href="/contests" className="navbar-item text-base">
                     CONTESTS
                   </a>
                   <a href=" " className="navbar-item text-base">
@@ -51,13 +67,16 @@ const Header = () => {
 
               <a
                 href="/categories"
-                className="navbar-item has-text-white text-base"
+                className="navbar-item has-text-blue has-text-weight-semibold is-size-6 pr-4"
               >
                 CATEGORIES
               </a>
-              <a href="/" className="navbar-item has-text-white text-base">
+              <Link to="/node_modules"
+
+                className="navbar-item has-text-blue has-text-weight-semibold is-size-6 pr-4"
+              >
                 USER
-              </a>
+              </L>
             </div>
           </div>
           <div className="navbar-end">

@@ -1,6 +1,5 @@
 import * as React from 'react';
 
-
 const Footer = () => {
   return (
     <footer className="footer has-background-blue  p-5">

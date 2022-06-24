@@ -6,7 +6,7 @@ const Container = styled.div`
     background: transparent !important;
   }
   .border-radius-md {
-    border-radius: 15px;none
+    border-radius: 15px;
   }
   .button:hover {
     color: ${(props) => props.theme.mainBrandColor} !important;
@@ -17,31 +17,22 @@ const Container = styled.div`
   }
 `;
 
-const HomeHero = () => {
+const HomeHero = ({ title, title1, subtitle, subtitle1 }) => {
   return (
     <Container>
       <section className="hero is-large has-background-image has-text-centered">
         <div className="hero-body">
-          none
           <div className="columns">
             <div className="column">
               <p className="title  text-large has-text-white">
-                Enter a world of Photos
-                <p className="title text-large has-text-blue m-0">
-                  & Amazing Awards
-                </p>
+                {title}
+                <p className="title text-large has-text-blue m-0">{title1}</p>
               </p>
               <div className="is-flex is-justify-content-center is-align-item-center">
                 <hr />
               </div>
-              <p className="has-text-white text-base m-1">
-                SnapX Photography is a professional website template with 5
-                different HTML pages for maximum customizations. It
-              </p>
-              <p className="has-text-white text-base">
-                is free for commercial usage. This Bootstrap v5.1.3 CSS layout
-                is provided by TemplateMo Free CSS Templates.
-              </p>
+              <p className="has-text-white text-base m-1">{subtitle}</p>
+              <p className="has-text-white text-base">{subtitle1}</p>
             </div>
           </div>
           <button
