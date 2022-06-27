@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import { theme } from '../utils/theme';
 
 const Container = styled.div`
   .background-transparent {
@@ -9,7 +10,7 @@ const Container = styled.div`
     border-radius: 15px;
   }
   .button:hover {
-    color: ${(props) => props.theme.mainBrandColor} !important;
+    color: ${(props) => (props.isblue ? theme.mainBrandColor : '#000')};
     background-color: #fff !important;
   }
   hr {
@@ -36,6 +37,7 @@ const HomeHero = ({ title, title1, subtitle, subtitle1 }) => {
             </div>
           </div>
           <button
+            props="isblue"
             type="button"
             className="button text-small is-outlined has-text-white py-4 px-6 is-responsive background-transparent"
           >

@@ -71,12 +71,12 @@ const Header = () => {
               >
                 CATEGORIES
               </a>
-              <Link to="/node_modules"
-
+              <Link
+                to="/"
                 className="navbar-item has-text-blue has-text-weight-semibold is-size-6 pr-4"
               >
                 USER
-              </L>
+              </Link>
             </div>
           </div>
           <div className="navbar-end">
