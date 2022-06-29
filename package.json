@@ -22,8 +22,14 @@
     "gatsby-plugin-sharp": "^4.17.0",
     "gatsby-plugin-styled-components": "^5.15.0",
     "gatsby-source-filesystem": "^4.17.0",
+<<<<<<< HEAD
     "gatsby-transformer-remark": "^5.17.0",
     "gatsby-transformer-sharp": "^4.17.0",
+=======
+    "gatsby-transformer-sharp": "^4.17.0",
+    "install": "^0.13.0",
+    "npm": "^8.13.1",
+>>>>>>> f61a8490c99e51ed188a291537dd925c304c3e21
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-slick": "^0.29.0",
