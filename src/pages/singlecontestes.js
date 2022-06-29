@@ -9,7 +9,7 @@ import ContestForm from '../components/ContestForm';
 //   background-size: cover;
 //   background-repeat: no-repeat;
 // `;
-const Contests = () => {
+const singlecontest = () => {
   return (
     <div>
       <Layout>
@@ -22,10 +22,9 @@ const Contests = () => {
         />
         {/* </Wrapper> */}
         <ContestForm />
-        <Contests />
       </Layout>
     </div>
   );
 };
 
-export default Contests;
+export default singlecontest;

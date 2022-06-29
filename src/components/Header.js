@@ -38,45 +38,45 @@ const Header = () => {
             <span aria-hidden="true" />
           </a>
         </div>
-        <div id="navbarBasicExample" className="navbar-menu">
+        <div id="navbarBasipcExample" className="navbar-menu">
           <div className="navbar-start ml-auto mr-0 is-justify-content-center">
             <div className="is-flex">
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="navbar-item has-text-blue is-size-6 has-text-weight-semibold pr-4"
               >
                 HOME
-              </a>
+              </Link>
               <div className="navbar-item has-dropdown is-hoverable">
-                <a
-                  href=" "
-                  className=" has-text-blue navbar-link  is-size-6 has-text-weight-semibold "
+                <Link
+                  to=" "
+                  className="has-text-blue navbar-link  is-size-6 has-text-weight-semibold "
                 >
                   PHOTOS & VIDEOS
-                </a>
+                </Link>
 
                 <div className="navbar-dropdown">
-                  <a href="/contests" className="navbar-item text-base">
+                  <Link to="/contests" className="navbar-item text-base">
                     CONTESTS
-                  </a>
-                  <a href=" " className="navbar-item text-base">
+                  </Link>
+                  <Link to="/singlecontests" className="navbar-item text-base">
                     SINGLE CONTESTS
-                  </a>
+                  </Link>
                 </div>
               </div>
 
-              <a
-                href="/categories"
+              <Link
+                to="/categories"
                 className="navbar-item has-text-blue has-text-weight-semibold is-size-6 pr-4"
               >
                 CATEGORIES
-              </a>
-              <Link to="/node_modules"
-
+              </Link>
+              <Link
+                to="/"
                 className="navbar-item has-text-blue has-text-weight-semibold is-size-6 pr-4"
               >
                 USER
-              </L>
+              </Link>
             </div>
           </div>
           <div className="navbar-end">
