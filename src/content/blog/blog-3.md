@@ -1,0 +1,9 @@
+---
+type: "blog"
+image: "/images/featured-03.jpg"
+title: "Fly In The Nature"
+rating: 4.5
+winnerName: "Vincent Adam"
+contestAuthorName: "Anthony Soft"
+awards: "5,500 + Canon EOS R3"
+---

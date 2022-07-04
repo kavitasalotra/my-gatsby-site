@@ -1,8 +1,10 @@
 ---
-slug: "/blog/dharam"
-date: "2019-05-04"
-firstName: "Dharam"
-lastName: "veer"
-emailAddress: "dharamveer12@gmail.com"
-contact-no.: 41864516359
+type: "blog"
+image: "/images/featured-01.jpg"
+title: "Walk In Nature"
+rating: 4.5
+winnerName: "Vincent Adam"
+contestAuthorName: "Anthony Soft"
+awards: "1.000 + Camera"
+button: "Readmore"
 ---

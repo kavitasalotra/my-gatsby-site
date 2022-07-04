@@ -64,7 +64,8 @@ const data = [
   },
 ];
 
-const FeaturedItems = () => {
+const FeaturedItems = ({ home }) => {
+  console.log(home);
   const [number, setNumber] = useState(0);
   console.log(number, 'number');
   const sliderRef = useRef();

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 
-const test = () => {
+const staticImage = () => {
   return (
     <div>
       <StaticImage
@@ -11,7 +11,8 @@ const test = () => {
         height={500}
       />
     </div>
+
   );
 };
 
-export default test;
+export default staticImage;

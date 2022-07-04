@@ -65,7 +65,7 @@ const GlobalStyle = createGlobalStyle`
   }
   .has-text-blue {
     color: ${theme.textColorBlue}!important;
-  }  letter-spacing: 1px;
+  }
   .has-background-white-bis  {
     background-color: ${theme.backgroundColor};
   }

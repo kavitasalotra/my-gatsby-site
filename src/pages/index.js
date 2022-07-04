@@ -1,21 +1,23 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
+import Layout from '../components/Layout';
 import Categories from '../components/Categories';
 import HomeHero from '../components/HomeHero';
-import Layout from '../components/Layout';
 import Features from '../components/Features';
 import Contests from '../components/Contests';
 import PricingPlans from '../components/PricingPlans';
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(filter: { frontmatter: { type: { eq: "author" } } }) {
       edges {
         node {
+          id
           frontmatter {
-            slug
-            firstName
-            lastName
+            image
+            type
+            contestAuthorName
+            awards
           }
         }
       }
@@ -38,19 +40,21 @@ const IndexPage = ({ data }) => {
       <Categories />
       <Contests />
       <PricingPlans />
-      <div className="columns">
-        {home &&
-          home &&
-          home.map(({ node }) => (
-            <div className="column is-3">
-              <div className="box">
-                <p>{node.frontmatter.firstName}</p>
-                <p>{node.frontmatter.lastName}</p>
-                <p>{node.frontmatter.date}</p>
-                <p>{node.frontmatter.emailAddress}</p>
+      <div className="section is-medium">
+        <div className="columns">
+          {home &&
+            home &&
+            home.map(({ node }) => (
+              <div className="column is-3">
+                <div className="box">
+                  <img src={node.frontmatter.image} alt="" />
+                  <p>{node.frontmatter.type}</p>
+                  <p>{node.frontmatter.contestAuthorName}</p>
+                  <p>{node.frontmatter.awards}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+        </div>
       </div>
     </Layout>
   );

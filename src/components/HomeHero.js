@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -35,12 +36,13 @@ const HomeHero = ({ title, title1, subtitle, subtitle1 }) => {
               <p className="has-text-white text-base">{subtitle1}</p>
             </div>
           </div>
-          <button
+          <Link
+            to="/contests"
             type="button"
             className="button text-small is-outlined has-text-white py-4 px-6 is-responsive background-transparent"
           >
             Explore SnapX Contest
-          </button>
+          </Link>
         </div>
       </section>
     </Container>

@@ -70,11 +70,15 @@ const Header = () => {
                 className="navbar-item has-text-blue has-text-weight-semibold is-size-6 pr-4"
               >
                 CATEGORIES
-<<<<<<< HEAD
               </Link>
-=======
-              </a>
->>>>>>> f61a8490c99e51ed188a291537dd925c304c3e21
+
+              <Link
+                to="/blogs"
+                className="navbar-item has-text-blue has-text-weight-semibold is-size-6 pr-4"
+              >
+                BLOG
+              </Link>
+
               <Link
                 to="/"
                 className="navbar-item has-text-blue has-text-weight-semibold is-size-6 pr-4"
