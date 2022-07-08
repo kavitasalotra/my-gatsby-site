@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import Categories from '../components/Categories';
 import HomeHero from '../components/HomeHero';
 import Features from '../components/Features';
-import Contests from '../components/Contests';
+import ContestsWinners from '../components/ContestsWinners';
 import PricingPlans from '../components/PricingPlans';
 
 export const pageQuery = graphql`
@@ -22,23 +22,31 @@ export const pageQuery = graphql`
         }
       }
     }
+    generalYaml {
+      id
+      title
+      title1
+      subtitle
+      subtitle1
+    }
   }
 `;
 
 const IndexPage = ({ data }) => {
   const home = data.allMarkdownRemark.edges;
-  console.log(home, 'home');
+  const homeData = data.generalYaml;
+  console.log(homeData, 'homeData');
   return (
     <Layout>
       <HomeHero
-        title="Enter a world of Photos &"
-        title1="Amazing Awards"
-        subtitle="SnapX Photography is a professional website template with 5 different HTML pages for maximum customizations. It "
-        subtitle1="is free for commercial usage. This Bootstrap v5.1.3 CSS layout is provided by TemplateMo Free CSS Templates."
+        title={homeData.title}
+        title1={homeData.title1}
+        subtitle={homeData.subtitle}
+        subtitle1={homeData.subtitle1}
       />
       <Features />
       <Categories />
-      <Contests />
+      <ContestsWinners />
       <PricingPlans />
       <div className="section is-medium">
         <div className="columns">

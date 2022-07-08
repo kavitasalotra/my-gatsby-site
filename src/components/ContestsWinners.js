@@ -1,7 +1,7 @@
 import * as React from 'react';
 import ContestCard from './ContestCard';
 
-const Contests = () => {
+const ContestsWinners = () => {
   return (
     <div className="hero is-medium has-background-primary-light">
       <div className="hero-body pb-4">
@@ -64,4 +64,4 @@ const Contests = () => {
     </div>
   );
 };
-export default Contests;
+export default ContestsWinners;

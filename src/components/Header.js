@@ -38,7 +38,7 @@ const Header = () => {
             <span aria-hidden="true" />
           </a>
         </div>
-        <div id="navbarBasipcExample" className="navbar-menu">
+        <div id="navbarBasicExample" className="navbar-menu">
           <div className="navbar-start ml-auto mr-0 is-justify-content-center">
             <div className="is-flex">
               <Link
@@ -54,7 +54,6 @@ const Header = () => {
                 >
                   PHOTOS & VIDEOS
                 </Link>
-
                 <div className="navbar-dropdown">
                   <Link to="/contests" className="navbar-item text-base">
                     CONTESTS
@@ -64,21 +63,18 @@ const Header = () => {
                   </Link>
                 </div>
               </div>
-
               <Link
                 to="/categories"
                 className="navbar-item has-text-blue has-text-weight-semibold is-size-6 pr-4"
               >
                 CATEGORIES
               </Link>
-
               <Link
                 to="/blogs"
                 className="navbar-item has-text-blue has-text-weight-semibold is-size-6 pr-4"
               >
                 BLOG
               </Link>
-
               <Link
                 to="/"
                 className="navbar-item has-text-blue has-text-weight-semibold is-size-6 pr-4"

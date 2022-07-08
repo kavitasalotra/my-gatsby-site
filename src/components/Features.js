@@ -92,7 +92,7 @@ const FeaturedItems = ({ home }) => {
         breakpoint: 769,
         settings: {
           arrows: false,
-          slidesToShow: 3,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
