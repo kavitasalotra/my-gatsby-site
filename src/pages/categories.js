@@ -8,10 +8,11 @@ const categories = () => {
   return (
     <Layout>
       <HomeHero
-        title={categoriedata.title}
-        title1={categoriedata.subtitle}
-        subtitle={categoriedata.description}
-        subtitle1={categoriedata.description1}
+        title={categoriedata.homeTitle}
+        title1={categoriedata.homeSubTitle}
+        subtitle={categoriedata.homeDescription}
+        subtitle1={categoriedata.homeDescriptionTwo}
+        button={categoriedata.homeButton}
       />
       <Categories />
     </Layout>

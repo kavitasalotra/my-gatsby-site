@@ -18,7 +18,7 @@ const Container = styled.div`
   }
 `;
 
-const HomeHero = ({ title, title1, subtitle, subtitle1 }) => {
+const HomeHero = ({ title, title1, subtitle, subtitle1, button }) => {
   return (
     <Container>
       <section className="hero is-large has-background-image has-text-centered">
@@ -41,7 +41,7 @@ const HomeHero = ({ title, title1, subtitle, subtitle1 }) => {
             type="button"
             className="button text-small is-outlined has-text-white py-4 px-6 is-responsive background-transparent"
           >
-            Explore SnapX Contest
+            {button}
           </Link>
         </div>
       </section>

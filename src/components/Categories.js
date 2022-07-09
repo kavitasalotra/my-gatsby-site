@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
 import Card from './Card';
 
 const Categories = () => {
@@ -12,12 +13,13 @@ const Categories = () => {
           </p>
         </div>
         <div className="column has-text-right">
-          <button
+          <Link
+            to="/categories"
             type="button"
             className="button text-base has-text-blue has-border-radius py-4  is-responsive"
           >
             Discover All Categories
-          </button>
+          </Link>
         </div>
       </div>
       <div className="columns">
@@ -28,7 +30,7 @@ const Categories = () => {
             number="126"
             subtitle="Available Contests"
             cardimage="/images/popular-01.png"
-            button="Browse Nature Pic Contests"
+            button="Nature Pic Contests"
             category="Top Contest"
             likes="256"
           />
@@ -40,7 +42,7 @@ const Categories = () => {
             number="116"
             subtitle="Available Contests"
             cardimage="/images/popular-02.png"
-            button="Browse Random Pic Contests"
+            button="Random Pic Contests"
             category="Top Contest"
             likes="256"
           />
@@ -52,7 +54,7 @@ const Categories = () => {
             number="164"
             subtitle="Available Contests"
             cardimage="/images/popular-03.png"
-            button="Browse Portrait Pic Contests"
+            button="Portrait Pic Contests"
             category="Top Contest"
             likes="256"
           />
@@ -64,7 +66,7 @@ const Categories = () => {
             number="135"
             subtitle="Available Contests"
             cardimage="/images/popular-04.png"
-            button="Browse Space Pic Contests"
+            button="Space Pic Contests"
             category="Top Contest"
             likes="256"
           />

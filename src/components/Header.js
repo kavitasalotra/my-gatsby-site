@@ -27,13 +27,14 @@ const Header = () => {
           </a>
 
           <a
+            href=" "
             role="button"
             className="navbar-burger"
             aria-label="menu"
             aria-expanded="false"
             data-target="navbarBasicExample"
-            href="/"
           >
+            <span aria-hidden="true" />
             <span aria-hidden="true" />
             <span aria-hidden="true" />
           </a>
@@ -76,17 +77,18 @@ const Header = () => {
                 BLOG
               </Link>
               <Link
-                to="/"
+                to="/contact"
                 className="navbar-item has-text-blue has-text-weight-semibold is-size-6 pr-4"
               >
-                USER
+                CONTACT US
               </Link>
             </div>
           </div>
           <div className="navbar-end">
             <div className="navbar-item">
               <div className="buttons">
-                <button
+                <Link
+                  to="/contact"
                   type="button"
                   className="button has-text-blue has-border-radius p-4"
                 >
@@ -94,7 +96,7 @@ const Header = () => {
                     <i className="fas fa-user" />
                   </span>
                   <p>Sign In/Up</p>
-                </button>
+                </Link>
               </div>
             </div>
           </div>

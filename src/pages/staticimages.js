@@ -5,13 +5,12 @@ const staticImage = () => {
   return (
     <div>
       <StaticImage
-        src="../../static/images/closed-bg.jpg"
+        src="../../static/images/images.png"
         alt="featuredimage"
         width={1000}
         height={500}
-      />
+      />png
     </div>
-
   );
 };
 

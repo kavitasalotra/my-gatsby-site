@@ -30,10 +30,11 @@ const Blog = ({ data }) => {
   return (
     <Layout>
       <HomeHero
-        title="Enter a world of Photos &"
-        title1="Amazing Awards"
+        title="Our blogs"
+        title1="are here"
         subtitle="SnappostX Photography is a professional website template with 5 different HTML pages for maximum customizations. It "
         subtitle1="is free for commercial usage. This Bootstrap v5.1.3 CSS layout is provided by TemplateMo Free CSS Templates."
+        button="Read More"
       />
       <div className="section is-medium">
         <div className="container">

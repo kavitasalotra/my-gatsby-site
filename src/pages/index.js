@@ -6,6 +6,7 @@ import HomeHero from '../components/HomeHero';
 import Features from '../components/Features';
 import ContestsWinners from '../components/ContestsWinners';
 import PricingPlans from '../components/PricingPlans';
+import indexdata from '../content/general/indexdata.yaml';
 
 export const pageQuery = graphql`
   query {
@@ -22,27 +23,20 @@ export const pageQuery = graphql`
         }
       }
     }
-    generalYaml {
-      id
-      title
-      title1
-      subtitle
-      subtitle1
-    }
   }
 `;
 
 const IndexPage = ({ data }) => {
   const home = data.allMarkdownRemark.edges;
-  const homeData = data.generalYaml;
-  console.log(homeData, 'homeData');
+  console.log(home, 'home');
   return (
     <Layout>
       <HomeHero
-        title={homeData.title}
-        title1={homeData.title1}
-        subtitle={homeData.subtitle}
-        subtitle1={homeData.subtitle1}
+        title={indexdata.title}
+        title1={indexdata.title1}
+        subtitle={indexdata.subtitle}
+        subtitle1={indexdata.subtitle1}
+        button={indexdata.button}
       />
       <Features />
       <Categories />

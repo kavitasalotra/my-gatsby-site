@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { theme } from '../utils/theme';
 
@@ -40,12 +41,13 @@ const PricingCard = ({ image, heading, title, subtitle, number }) => {
           </div>
         </div>
         <div className="buttons is-justify-content-center m-4">
-          <button
+          <Link
+            to="../components/PricingPlans"
             type="button"
             className="button has-text-blue has-border-radius p-4"
           >
             <p>Choose This Plans</p>
-          </button>
+          </Link>
         </div>
       </div>
     </Section>

@@ -12,6 +12,7 @@ const Contests = () => {
         title1="going on at SnapX"
         subtitle="When you need Free CSS Templates, you just remember our website TemplateMo. We  "
         subtitle1="provide you best quality website templates at absolutely free of charge. No hidden cost involved."
+        button="Our Contest"
       />
       <ContestsWinners />
       <ContestForm />

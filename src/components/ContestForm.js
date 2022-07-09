@@ -8,14 +8,18 @@ const Container = styled.div`
     right: 1.125em;
     z-index: 4;
   }
+  .select,
+  select {
+    width: 100% !important;
+  }
 `;
 
 const ContestForm = () => {
   return (
-    <Container className="container p-6">
-      <div className="section is-medium border-color py-4 px-3">
-        <div className="columns is-desktop">
-          <div className="column is-4">
+    <Container className="container p-6 m-6">
+      <div className="section is-medium  py-4 px-3">
+        <div className="columns is-vcentered ">
+          <div className="column is-12">
             <div className="field">
               <label className="label">Search an contest</label>
               <div className="control  border-radius-small">
@@ -26,8 +30,7 @@ const ContestForm = () => {
                 />
               </div>
             </div>
-          </div>
-          <div className="column is-4">
+
             <div className="field">
               <label className="label">Pick Category</label>
               <div className="control">
@@ -41,8 +44,7 @@ const ContestForm = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="column is-2">
+
             <div className="field">
               <label className="label">Award Price</label>
               <div className="control">
@@ -56,13 +58,12 @@ const ContestForm = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="column is-2 is-vcentered is-flex is-justify-content-center is-align-items-center">
+
             <div className="field">
               <div className="control">
                 <button
                   type="button"
-                  className="button border-radius-small has-background-blue"
+                  className="button border-radius-small has-background-blue is-fullwidth mt-6"
                 >
                   Search now
                 </button>
