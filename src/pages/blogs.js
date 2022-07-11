@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
-
 import Layout from '../components/Layout';
 import HomeHero from '../components/HomeHero';
 
@@ -16,10 +15,13 @@ export const pageQuery = graphql`
             winnerName
             contestAuthorName
             awards
+          }
+        }
       }
     }
   }
 `;
+
 const Blog = ({ data }) => {
   const post = data.allMdx.edges;
   console.log(post, 'post');
