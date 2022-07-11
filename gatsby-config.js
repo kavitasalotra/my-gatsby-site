@@ -5,7 +5,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-transformer-yaml`,
-
+    'gatsby-plugin-mdx',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -13,14 +13,7 @@ module.exports = {
         path: `${__dirname}/src/content`,
       },
     },
-    {
-      resolve: 'gatsby-plugin-mdx',
-      options: {
-        defaultLayouts: {
-          default: require.resolve('./src/components/PageLayout.js'),
-        },
-      },
-    },
+
     `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-styled-components`,
