@@ -16,10 +16,6 @@ export const pageQuery = graphql`
             winnerName
             contestAuthorName
             awards
-          }
-          id
-          body
-        }
       }
     }
   }
