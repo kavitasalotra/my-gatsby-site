@@ -53,5 +53,4 @@ const PricingCard = ({ image, heading, title, subtitle, number }) => {
     </Section>
   );
 };
-
 export default PricingCard;

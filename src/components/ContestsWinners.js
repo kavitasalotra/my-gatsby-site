@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import * as React from 'react';
 import ContestCard from './ContestCard';
 
@@ -7,10 +8,10 @@ const ContestsWinners = () => {
       <div className="hero-body pb-4">
         <div className="columns mb-5">
           <div className="column has-text-centered">
-            <h1 className="text-small has-text-blue">
+            <h1 className="text-small has-text-blue is-size-5-mobile">
               Closed Photography Contests
             </h1>
-            <p className="text-medium has-text-weight-bold mb-5">
+            <p className="text-medium has-text-weight-bold mb-5 is-size-6-mobile">
               Previous Contests With Handpicked Winners
             </p>
           </div>
@@ -24,7 +25,6 @@ const ContestsWinners = () => {
               title1="410 Pictures"
               subtitle1="Submitted pics"
               winner="Anthony Soft"
-              awards="4,220"
             />
           </div>
           <div className="column is-4">
@@ -35,7 +35,6 @@ const ContestsWinners = () => {
               title1="320 Pictures"
               subtitle1="Submitted pics"
               winner="Anthony Soft"
-              awards="1,220"
             />
           </div>
           <div className="column is-4">
@@ -46,18 +45,18 @@ const ContestsWinners = () => {
               title1="284 Pictures"
               subtitle1="Submitted pics"
               winner="Anthony Soft"
-              awards="3,220"
             />
           </div>
         </div>
         <div className="buttons m-4 columns">
           <div className="column is-12 has-text-centered">
-            <button
+            <Link
+              to="/contests"
               type="button"
               className="button has-text-blue has-border-radius p-4 mb-5"
             >
               Browse Open Contests
-            </button>
+            </Link>
           </div>
         </div>
       </div>

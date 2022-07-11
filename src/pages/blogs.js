@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
-import { MDXRenderer } from 'gatsby-plugin-mdx';
+
 import Layout from '../components/Layout';
 import HomeHero from '../components/HomeHero';
 
@@ -46,7 +46,6 @@ const Blog = ({ data }) => {
                   <p>{node.frontmatter.title}</p>
                   <p>{node.frontmatter.rating}</p>
                   <p>{node.frontmatter.winnerName}</p>
-                  <MDXRenderer>{node.body}</MDXRenderer>
                 </div>
               </div>
             ))}

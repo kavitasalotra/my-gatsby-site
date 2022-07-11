@@ -12,7 +12,6 @@ const Wrapper = styled.div`
     position: absolute;
     left: 15px;
     top: -60px;
-
     opacity: 0;
     transition: all 0.3s;
   }
@@ -25,7 +24,6 @@ const Card = ({
   cardimage,
   button,
   category,
-  likes,
 }) => {
   return (
     <Wrapper className="card is-shadowless border-color">
@@ -37,9 +35,8 @@ const Card = ({
                 <img src={image} alt="cardimage" />
               </figure>
             </div>
-
             <div className="media-content">
-              <p className="title text-small ">{title}</p>
+              <p className="title text-small is-size-6-mobile ">{title}</p>
               <span className="tag is-light subtitle text-base has-text-blue mb-0">
                 {number}
               </span>
@@ -54,10 +51,6 @@ const Card = ({
             <div className="info">
               <span className=" has-text-blue text-base has-background-white mr-2 has-text-weight-semibold p-2 border-color">
                 {category}
-              </span>
-              <span className=" has-text-blue text-base has-background-white has-text-weight-semibold p-2 border-color">
-                <i className="fa-solid fa-heart pr-2" />
-                {likes}
               </span>
             </div>
             {/* </div> */}

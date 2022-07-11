@@ -42,14 +42,16 @@ const IndexPage = ({ data }) => {
       <Categories />
       <ContestsWinners />
       <PricingPlans />
-      <div className="section is-medium">
+      <div className="section">
         <div className="columns">
           {home &&
             home &&
             home.map(({ node }) => (
-              <div className="column is-3">
+              <div className="column is-4">
                 <div className="box">
-                  <img src={node.frontmatter.image} alt="" />
+                  <a href="/">
+                    <img src={node.frontmatter.image} alt="" />
+                  </a>
                   <p>{node.frontmatter.type}</p>
                   <p>{node.frontmatter.contestAuthorName}</p>
                   <p>{node.frontmatter.awards}</p>

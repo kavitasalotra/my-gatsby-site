@@ -25,15 +25,21 @@ const HomeHero = ({ title, title1, subtitle, subtitle1, button }) => {
         <div className="hero-body">
           <div className="columns">
             <div className="column">
-              <p className="title  text-large has-text-white">
+              <h1 className="title  text-large has-text-white is-size-4-mobile">
                 {title}
-                <p className="title text-large has-text-blue m-0">{title1}</p>
-              </p>
-              <div className="is-flex is-justify-content-center is-align-item-center">
+                <h1 className="title text-large has-text-blue m-0  is-size-4-mobile">
+                  {title1}
+                </h1>
+              </h1>
+              <div className="is-flex is-justify-content-center is-align-item-center  ">
                 <hr />
               </div>
-              <p className="has-text-white text-base m-1">{subtitle}</p>
-              <p className="has-text-white text-base">{subtitle1}</p>
+              <p className="has-text-white text-base m-1  is-size-7-mobile">
+                {subtitle}
+              </p>
+              <p className="has-text-white text-base is-size-7-mobile">
+                {subtitle1}
+              </p>
             </div>
           </div>
           <Link

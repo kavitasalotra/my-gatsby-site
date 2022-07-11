@@ -95,7 +95,7 @@ const Header = () => {
                   <span className="icon is-small">
                     <i className="fas fa-user" />
                   </span>
-                  <p>Sign In/Up</p>
+                  <p>Contact Us</p>
                 </Link>
               </div>
             </div>

@@ -32,7 +32,6 @@ const Categories = () => {
             cardimage="/images/popular-01.png"
             button="Nature Pic Contests"
             category="Top Contest"
-            likes="256"
           />
         </div>
         <div className="column is-3">
@@ -44,7 +43,6 @@ const Categories = () => {
             cardimage="/images/popular-02.png"
             button="Random Pic Contests"
             category="Top Contest"
-            likes="256"
           />
         </div>
         <div className="column is-3">
@@ -56,7 +54,6 @@ const Categories = () => {
             cardimage="/images/popular-03.png"
             button="Portrait Pic Contests"
             category="Top Contest"
-            likes="256"
           />
         </div>
         <div className="column is-3">
@@ -68,7 +65,6 @@ const Categories = () => {
             cardimage="/images/popular-04.png"
             button="Space Pic Contests"
             category="Top Contest"
-            likes="256"
           />
         </div>
       </div>

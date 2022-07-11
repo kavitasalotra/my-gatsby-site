@@ -18,15 +18,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const ContestCard = ({
-  image,
-  title,
-  subtitle,
-  title1,
-  subtitle1,
-  winner,
-  awards,
-}) => {
+const ContestCard = ({ image, title, subtitle, title1, subtitle1, winner }) => {
   return (
     <Wrapper className="card is-shadowless ">
       <div className="card-image is-relative">
@@ -36,9 +28,6 @@ const ContestCard = ({
             <span className=" has-text-blue text-base has-background-white mr-2 has-text-weight-semibold 	 p-2 border-color">
               <em className="has-text-grey">Winner:</em>
               {winner}
-            </span>
-            <span className=" has-text-blue text-base has-background-white has-text-weight-semibold 	 p-2 border-color">
-              <em className="has-text-grey">Award:</em>$ {awards}
             </span>
           </div>
         </figure>

@@ -7,8 +7,8 @@ const PricingPlans = () => {
       <div className="hero-body">
         <div className="columns mb-5">
           <div className="column has-text-centered">
-            <h1 className="text-small has-text-blue">Our Pricing</h1>
-            <p className="text-medium has-text-weight-bold mb-5">
+            <h1 className="text-small has-text-blue ">Our Pricing</h1>
+            <p className="text-medium has-text-weight-bold mb-5 is-size-5-mobile">
               Photography Contest Plans and Price Awards
             </p>
           </div>
