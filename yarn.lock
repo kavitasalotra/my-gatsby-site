@@ -1910,7 +1910,7 @@
   "resolved" "https://registry.npmjs.org/@lmdb/lmdb-linux-x64/-/lmdb-linux-x64-2.5.2.tgz"
   "version" "2.5.2"
 
-"@mdx-js/mdx@^1.0.0":
+"@mdx-js/mdx@^1.0.0", "@mdx-js/mdx@^1.6.22":
   "integrity" "sha512-AMxuLxPz2j5/6TpF/XSdKpQP1NlG0z11dFOlq+2IP/lSgl11GY8ji6S/rgsViN/L0BDvHvUMruRb7ub+24LUYA=="
   "resolved" "https://registry.npmjs.org/@mdx-js/mdx/-/mdx-1.6.22.tgz"
   "version" "1.6.22"
@@ -1935,7 +1935,7 @@
     "unist-builder" "2.0.3"
     "unist-util-visit" "2.0.3"
 
-"@mdx-js/react@^1.0.0":
+"@mdx-js/react@^1.0.0", "@mdx-js/react@^1.6.22":
   "integrity" "sha512-TDoPum4SHdfPiGSAaRBw7ECyI8VaHpK8GJugbJIJuqyh6kzw9ZLJZW3HGL3NNrJGxcAixUvqROm+YuQOo5eXtg=="
   "resolved" "https://registry.npmjs.org/@mdx-js/react/-/react-1.6.22.tgz"
   "version" "1.6.22"

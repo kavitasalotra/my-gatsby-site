@@ -20,7 +20,7 @@ const PricingPlans = () => {
               heading="Basic Plan"
               title="Lorem Ipsum Dolores Sonte
               Songe Lorem Ipsum Dol
-             Matrios Venga Heptuss"
+              Matrios Venga Heptuss"
               subtitle="Denim Sriracha Kogi
             Digital Photography Awards"
               number="$25 USD"
