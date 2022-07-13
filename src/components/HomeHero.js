@@ -25,9 +25,9 @@ const HomeHero = ({ title, title1, subtitle, subtitle1, button }) => {
         <div className="hero-body">
           <div className="columns">
             <div className="column">
-              <h1 className="title  text-large has-text-white is-size-5-mobile">
+              <h1 className="title  text-large has-text-white is-size-4-mobile">
                 {title}
-                <h1 className="title text-large has-text-blue m-0  is-size-5-mobile">
+                <h1 className="title text-large has-text-blue m-0  is-size-4-mobile">
                   {title1}
                 </h1>
               </h1>

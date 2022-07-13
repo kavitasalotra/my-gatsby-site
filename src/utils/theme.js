@@ -83,7 +83,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: ${theme.fontSizeMedium};
   }
   .text-large {
-    font-size: ${theme.fontSizeLarge} !important;
+    font-size: ${theme.fontSizeLarge};
   }
 
   .button:hover{
