@@ -25,7 +25,6 @@ const Header = () => {
           <a href="/" className="navbar-item">
             <img src="images/logo.png" alt="logo.png" />
           </a>
-
           <a
             href=" "
             role="button"
